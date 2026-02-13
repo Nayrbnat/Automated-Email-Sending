@@ -1,0 +1,111 @@
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# OAuth Tokens and Credentials
+gmail_token.json
+zoho_token.json
+credentials.json
+token.json
+
+# Email Lists and CSV Files (contain PII)
+*.csv
+!sample_students.csv
+acceptance.csv
+rejection.csv
+bootcamp_applicants.csv
+UG1_members_clean.csv
+acceptance_fundies.csv
+rejection_fundies.csv
+
+# Email Content Files
+sample_emails.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Logs and Databases
+*.log
+*.sqlite
+*.db
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Email Results and Reports
+email_results_*.json
+email_results_*.txt
+sent_emails_*.log
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*~
+
+# Test Files (if you want to exclude them)
+test_*.py
+*_test.py
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.cache

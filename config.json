@@ -1,0 +1,25 @@
+{
+  "zoho_config": {
+    "client_id": "ENV:ZOHO_CLIENT_ID",
+    "client_secret": "ENV:ZOHO_CLIENT_SECRET", 
+    "refresh_token": "ENV:ZOHO_REFRESH_TOKEN",
+    "sender_email": "ENV:ZOHO_SENDER_EMAIL",
+    "sender_name": "ENV:ZOHO_SENDER_NAME"
+  },
+  "gmail_config": {
+    "client_id": "ENV:GMAIL_CLIENT_ID",
+    "client_secret": "ENV:GMAIL_CLIENT_SECRET",
+    "sender_email": "ENV:GMAIL_SENDER_EMAIL",
+    "sender_name": "ENV:GMAIL_SENDER_NAME"
+  },
+  "email_templates": {
+    "welcome_subject": "Welcome $first_name to LSE - Your Investing Journey Begins!",
+    "welcome_body": "TEMPLATE_FILE:templates/MBP_freshers_template.html"
+  },
+  "settings": { 
+    "batch_size": 75,
+    "batch_delay_minutes": 0.75,
+    "max_retries": 3,
+    "save_results": true
+  }
+}
