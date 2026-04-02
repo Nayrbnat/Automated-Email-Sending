@@ -1,7 +1,7 @@
 {
   "zoho_config": {
     "client_id": "ENV:ZOHO_CLIENT_ID",
-    "client_secret": "ENV:ZOHO_CLIENT_SECRET", 
+    "client_secret": "ENV:ZOHO_CLIENT_SECRET",
     "refresh_token": "ENV:ZOHO_REFRESH_TOKEN",
     "sender_email": "ENV:ZOHO_SENDER_EMAIL",
     "sender_name": "ENV:ZOHO_SENDER_NAME"
@@ -16,7 +16,73 @@
     "welcome_subject": "Welcome $first_name to LSE - Your Investing Journey Begins!",
     "welcome_body": "TEMPLATE_FILE:templates/MBP_freshers_template.html"
   },
-  "settings": { 
+  "templates": {
+    "welcome": {
+      "subject": "\ud83c\udf89 Welcome $first_name - Your Journey Begins!",
+      "template_file": "templates/MBP_freshers_template.html",
+      "description": "Welcome email for new members"
+    },
+    "followup": {
+      "subject": "Take the Leap \u2013 MBP Capital Is Where Your Journey Begins",
+      "template_file": "templates/MBP_freshers_followup.html",
+      "description": "Follow-up email for freshers"
+    },
+    "rejection": {
+      "subject": "Your MBP Capital Application Update",
+      "template_file": "templates/MBP_rejection.html",
+      "csv_file": "data/rejection.csv",
+      "description": "Application rejection emails"
+    },
+    "membership": {
+      "subject": "Important: MBP Capital Membership Requirement",
+      "template_file": "templates/MBP_membership.html",
+      "description": "Membership reminder emails"
+    },
+    "acceptance": {
+      "subject": "Congratulations \u2013 Welcome to MBP Capital Bootcamp",
+      "template_file": "templates/MBP_acceptance.html",
+      "csv_file": "data/acceptance.csv",
+      "description": "Acceptance emails"
+    },
+    "stock_pitch_reject": {
+      "subject": "MBP Capital x Citadel Stock Pitch Competition 2026 Competition Update",
+      "template_file": "templates/stock_pitch_reject.html",
+      "csv_file": "data/stock_pitch_reject.csv",
+      "csv_loader": "stock_pitch",
+      "description": "Stock pitch rejection emails"
+    },
+    "stock_pitch_semifinals": {
+      "subject": "MBP Capital x Citadel Global Stock Pitch Competition Semi Finals Invitation",
+      "template_file": "templates/stock_pitch_semifinals.html",
+      "csv_file": "data/stock_pitch_semi.csv",
+      "csv_loader": "stock_pitch",
+      "description": "Stock pitch semi-finals invitation"
+    },
+    "stock_pitch_finals_reject": {
+      "subject": "MBP Capital x Citadel Stock Pitch Competition 2026 Competition Update [Semi-Finals]",
+      "template_file": "templates/stock_pitch_reject_semis.html",
+      "csv_file": "data/stock_pitch_finals_reject.csv",
+      "csv_loader": "stock_pitch",
+      "description": "Stock pitch finals rejection emails",
+      "cc": ["info@mbpcapital.co.uk"]
+    },
+    "lse_acceptance_mbp_invite": {
+      "subject": "Congratulations on Your LSE Offer \u2013 Discover MBP Capital",
+      "template_file": "templates/lse_acceptance_mbp_invite.html",
+      "csv_file": "data/lse_acceptance_test.csv",
+      "csv_loader": "names",
+      "description": "LSE acceptance congratulations + MBP Capital invitation"
+    },
+    "stock_pitch_finals": {
+      "subject": "[CONGRATULATIONS] MBP Capital x Citadel Global Stock Pitch Competition - Finals Invitation",
+      "template_file": "templates/stock_pitch_finals.html",
+      "csv_file": "data/stock_pitch_finals_accept.csv",
+      "csv_loader": "stock_pitch",
+      "description": "Stock pitch finals invitation",
+      "cc": ["Marie.Treharne@citadel.com", "info@mbpcapital.co.uk"]
+    }
+  },
+  "settings": {
     "batch_size": 75,
     "batch_delay_minutes": 0.75,
     "max_retries": 3,

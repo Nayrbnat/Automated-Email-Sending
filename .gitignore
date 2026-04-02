@@ -11,18 +11,10 @@ zoho_token.json
 credentials.json
 token.json
 
-# Email Lists and CSV Files (contain PII)
-*.csv
-!sample_students.csv
-acceptance.csv
-rejection.csv
-bootcamp_applicants.csv
-UG1_members_clean.csv
-acceptance_fundies.csv
-rejection_fundies.csv
-
-# Email Content Files
-sample_emails.txt
+# Recipient Data (contains PII)
+data/*.csv
+data/*.MD
+data/xOld/
 
 # Python
 __pycache__/
@@ -31,81 +23,40 @@ __pycache__/
 *.so
 .Python
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
 
 # Virtual Environments
 venv/
 env/
-ENV/
-env.bak/
-venv.bak/
 .venv/
 
-# PyCharm
+# IDE
 .idea/
-*.iml
-*.iws
-.idea_modules/
-
-# VS Code
 .vscode/
 *.code-workspace
-.history/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Logs and Databases
+# Logs and Results
+results/
 *.log
 *.sqlite
 *.db
 
-# OS Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-desktop.ini
-
-# Email Results and Reports
+# Email Results
 email_results_*.json
 email_results_*.txt
 sent_emails_*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Backup Files
 *.bak
 *.backup
 *.old
 *~
-
-# Test Files (if you want to exclude them)
-test_*.py
-*_test.py
-
-# Temporary Files
-tmp/
-temp/
 *.tmp
 *.cache
